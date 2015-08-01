@@ -2,9 +2,9 @@ var commonform = require('vesting-commonform')
 var parse = require('./')
 var vesting = require('vesting')
 
-require('tape')('round trips', function(test) {
+require('tape')('Round Trips', function(test) {
 
-  test.test('With Cliff', function(test) {
+  test.test('Vesting with Cliff', function(test) {
     var args = [48, 4, 1]
     var legal = commonform.apply(null, args)
     var direct = vesting.apply(null, args)
@@ -24,14 +24,15 @@ require('tape')('round trips', function(test) {
       .forEach(function(example) {
         test.deepEqual(
           direct.apply(null, example),
-          parsed.apply(null, example)) })
+          parsed.apply(null, example),
+          'return the same results') })
     test.equal(
       direct.toString(),
       parsed.toString(),
       'stringified functions equal')
     test.end() })
 
-  test.test('Straight', function(test) {
+  test.test('Straight Vesting', function(test) {
     var args = [48]
     var legal = commonform.apply(null, args)
     var direct = vesting.apply(null, args)
@@ -42,7 +43,8 @@ require('tape')('round trips', function(test) {
       .forEach(function(example) {
         test.deepEqual(
           direct.apply(null, example),
-          parsed.apply(null, example)) })
+          parsed.apply(null, example),
+          'return the same results') })
     test.equal(
       direct.toString(),
       parsed.toString(),
