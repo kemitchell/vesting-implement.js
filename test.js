@@ -25,6 +25,10 @@ require('tape')('round trips', function(test) {
         test.deepEqual(
           direct.apply(null, example),
           parsed.apply(null, example)) })
+    test.equal(
+      direct.toString(),
+      parsed.toString(),
+      'stringified functions equal')
     test.end() })
 
   test.test('Straight', function(test) {
@@ -39,5 +43,8 @@ require('tape')('round trips', function(test) {
         test.deepEqual(
           direct.apply(null, example),
           parsed.apply(null, example)) })
-
+    test.equal(
+      direct.toString(),
+      parsed.toString(),
+      'stringified functions equal')
     test.end() }) })
