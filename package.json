@@ -1,0 +1,20 @@
+{
+  "name": "vesting-implement",
+  "version": "0.0.0",
+  "description": "Implement a Common Form stock vesting provision",
+  "author": "Kyle E. Mitchell <kyle@kemitchell.com> (https://kemitchell.com/)",
+  "repository": "kemitchell/vesting-implement.js",
+  "license": "MIT",
+  "dependencies": {
+    "deep-equal": "~1.0.0",
+    "vesting": "~1.0.0"
+  },
+  "devDependencies": {
+    "tape": "~4.0.1",
+    "vesting": "~1.0.0",
+    "vesting-commonform": "~1.0.0"
+  },
+  "scripts": {
+    "test": "tape test.js"
+  }
+}
