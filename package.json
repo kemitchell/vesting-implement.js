@@ -1,7 +1,7 @@
 {
   "name": "vesting-implement",
   "description": "implement a Common Form stock vesting provision",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Kyle E. Mitchell <kyle@kemitchell.com> (https://kemitchell.com/)",
   "dependencies": {
     "deep-equal": "~1.0.0",
